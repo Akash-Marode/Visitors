@@ -1,4 +1,4 @@
-package com.entity;
+package com.vms.entity;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -14,24 +14,32 @@ public class Visitor {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-
 	private Integer id; // id
+	
 	@Column(name = "Date", nullable = false)
 	private LocalDate date; // date
+	
 	@Column(name = "In_Time", nullable = false)
 	private LocalTime intime; // in time
+	
 	@Column(name = "Name", nullable = false)
 	private String firstname; // name
+	
 	@Column(name = "Surname", nullable = false)
 	private String lastname; // surname
+	
 	@Column(name = "Contact", nullable = false)
 	private Long mobile; // contact
+	
 	@Column(name = "Vehicle_no")
 	private String vehicle_no; // vehicle number on plate
+	
 	@Column(name = "Person_to_meet")
 	private String meet_with; // person to meet
+	
 	@Column(name = "Reason", nullable = false)
 	private String purpose; // reason for visit
+	
 	@Column(name = "Out_Time", nullable = false)
 	private LocalTime outTime; // out time
 
